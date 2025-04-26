@@ -11,7 +11,7 @@ function updateNumberOfCandles() {
 }
 
 function updateBuyButtonText() {
-  const totalPrice = candlePrice
+  const totalPrice = candlePrice * numberOfCandles
   const text = `BUY ${numberOfCandles} FOR € ${totalPrice.toFixed(2)}`
   document.getElementById('buy-button').textContent = text
 }
@@ -30,7 +30,10 @@ function handleIncreaseNumberOfCandles() {
 }
 
 function handleBuy() {
-  const text = 'You will buy the candles now'
+  const totalPrice = candlePrice * numberOfCandles;
+  const text = `You will buy ${numberOfCandles} candles for € ${totalPrice.toFixed(
+    2
+  )}`;
   alert(text)
   numberOfCandles = 1
   updateNumberOfCandles()

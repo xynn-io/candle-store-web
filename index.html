@@ -7,27 +7,28 @@
     <link href="/style.css" rel="stylesheet" />
   </head>
 
-  <body class="">
-    <h1>Watermeeeeaw Candle</h1>
+  <body class="body">
+    <h1>Watermelon Candle</h1>
     <div class="image">
-      <img src="candle.svg" class="candle" />
-      <div class=""><div class="price">€ zzsss</div></div>
+      <img src="images/candle.svg" class="candle" />
+      <div class="ornament"><div class="price">€ 0,39</div></div>
     </div>
     <h2>
       This candle is as tasty as beautiful. It's digital watermelon aroma
-      reaches out to youuuUuuuUUuUjjjijddczzxx
+      reaches out to you within your imagination as soon as you lit it!
+      Definitely the best pick for a hot summer afternoon.
     </h2>
-    <div class="">
-      <button onclick="">
+    <div class="number-of-candles-row">
+      <button onclick="handleReduceNumberOfCandles()">
         <img src="images/symbol_minus.svg" class="symbol" />
       </button>
       <span id="number-of-candles"></span>
-      <button onclick="">
+      <button onclick="handleIncreaseNumberOfCandles()">
         <img src="images/symbol_plus.svg" class="symbol" />
       </button>
     </div>
 
-    <button id="buy-button" onclick="" class=""></button>
+    <button id="buy-button" onclick="handleBuy()" class="buy-button"></button>
 
     <script defer type="text/javascript" src="/main.js"></script>
   </body>
