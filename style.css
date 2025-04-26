@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --purple: rgb(102, 45, 145);
+  --purple-light: rgb(137, 80, 188);
+  --orange: rgb(242, 159, 4);
+  --white: rgb(251, 249, 241);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  padding: 0 12px;
+  color: var(--white);
+  background-color: var(--purple);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.image {
+  position: relative;
+  overflow: visible;
+
+  .candle {
+    height: 50vh;
+  }
+
+  .ornament {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url('images/ornament.svg') no-repeat center;
+
+    .price {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--purple);
+    }
+  }
+}
+
+button {
+  border: none;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--white);
+  background-color: var(--purple-light);
+  cursor: pointer;
+}
+
+.number-of-candles-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    border-radius: 50%;
+    padding: 14px 14px 4px 14px;
+  }
+
+  span {
+    min-width: 160px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+.symbol {
+  width: 30px;
+}
+
+.buy-button {
+  width: 90%;
+  margin-bottom: 40px;
+  padding: 12px 0;
+  border-radius: 30px;
+}
